@@ -6,16 +6,22 @@
     <title>Todo</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     </head>
 <body>
-    <div class="contianer">
-        <h1>Todo</h1>
-        <!-- write a form for todo app use taldwind for css -->
-        <form id="todo-form">
-            <input type="text" id="todo-input" placeholder="Enter a todo item">
-            <button type="submit">Add</button>
-        </form>
-        <ul id="todo-list"></ul>
-    </div>
+    <div id="myDIV" class="header">
+        <h2>My To Do List</h2>
+        <input type="text" id="myInput" placeholder="Title...">
+        <span onclick="newElement()" class="addBtn">Add</span>
+      </div>
+      
+      <ul id="myUL">
+        <li>Hit the gym</li>
+        <li class="checked">Pay bills</li>
+        <li>Meet George</li>
+        <li>Buy eggs</li>
+        <li>Read a book</li>
+        <li>Organize office</li>
+      </ul>
 </body>
 </html>
